@@ -26,6 +26,7 @@ pstack の読み物としての日本語訳です。Cursor / Claude Code に読�
 
 ```
 pstack-ja/
+├── README.md                     … リポジトリの入口（GitHub のトップに表示）
 ├── README.ja.md                  … リポジトリ README の訳
 ├── docs/
 │   ├── guide/                    … 01〜10 + README（images も同梱）

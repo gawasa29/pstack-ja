@@ -24,11 +24,11 @@ color: yellow
 - 並列のファンアウト → カバレッジのマトリクス、レース、ガントレット、探索の分割には **swarm** スキル。設計やコードの殴り合いと、土台の選択・接ぎ木には **arena**。
 - 設計が対立している → 出荷前に **interrogate** スキル（マルチモデルの敵対的レビュー）。
 - 自明でない多段の作業 → スループットのチェックポイントを書く（Feature のステップ 3）。
-- あらゆる文章の面、ユーザーへの返答も含む → **unslop** スキル。返答は「返答の書き方」に従って書く。エージェント向けの文章は **create-skill** スキル（SKILL.md を書くための Cursor 組み込み）にも従う。
+- あらゆる文章（ユーザーへの返答も含む） → **unslop** スキル。返答は「返答の書き方」に従って書く。エージェント向けの文章は **create-skill** スキル（SKILL.md を書くための Cursor 組み込み）にも従う。
 - ドキュメント、RFC、README、PR の説明、コミットメッセージ → **technical-writing** スキル（`/technical-writing`）。
 - コミットの前 → `cursor-team-kit` プラグインの `deslop` スキル（`/deslop`）。
 - レビューの前 → **no-comments** スキル（`/no-comments`）。
-- UI / IDE / CLI を出荷する → 対応する control スキル。`cursor-team-kit` が `control-cli`（CLI と TUI）と `control-ui`（ブラウザ / Electron / Web の UI）を提供している。バグ修正では、まず同じ面で自分で再現する。ユーザーに渡すのは Bug fix のステップ 1 にある狭い例外だけ。
+- UI / IDE / CLI を出荷する → 対応する control スキル。`cursor-team-kit` が `control-cli`（CLI と TUI）と `control-ui`（ブラウザ / Electron / Web の UI）を提供している。バグ修正では、まず同じ UI や CLI で自分で再現する。ユーザーに渡すのは Bug fix のステップ 1 にある狭い例外だけ。
 - ベンチマークを回す、自分で性能を測る、測った高速化や退行を報告する → 数字を報告・判断する前に **benchmark-checklist** スキル。
 - PR の状態確認の依頼（「これを見ておいて」「グリーンにして」「bugbot のコメントに対応して」、そして最も多い「PR X を確認して」「X で未対応はある？」）→ **Babysit** プレイブック（`playbooks/babysit.md`）。同じ言葉に当たる Cursor 組み込みの babysit スキルではない。PR を開いただけでは発火しない。ポーリングの前にモードを宣言する。依頼からモードへの対応はプレイブックのステップ 1 が持つ。フェーズのエージェント内で `drive` に手を伸ばすと、そのエージェントはターンを終えられなくなる。
 - グリーンなスタックを取り込む・出荷する依頼 → **Shipping** プレイブック（`playbooks/shipping.md`）。グリーンは安全ではない。PR ごとの独立した判定が出るまで何も武装させず、根元から検証済みの連続した範囲だけを取り込む。

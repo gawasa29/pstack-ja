@@ -149,7 +149,7 @@ morning.
 | [`/figure-it-out`](skills/figure-it-out/SKILL.ja.md) | 同梱のプレイブックが合わないとき。そのタスク用の厳格で監査可能なプレイブックを設計する。 |
 | [`/show-me-your-work`](skills/show-me-your-work/SKILL.ja.md) | レビューできる判断の記録がほしいとき。判断をコミット可能な TSV に記録する。 |
 | [`/create-verification-skill`](skills/create-verification-skill/SKILL.ja.md) | プロジェクトにアプリの振る舞いを証明するスクリプト化された手段がないとき。機能マップ付きのプロジェクト固有の検証スキルを、任意の言語・プラットフォーム向けに生成する。 |
-| [`/maintain-verification-skill`](skills/maintain-verification-skill/SKILL.ja.md) | 検証スキルの機能マップがアプリからずれているとき。ソースの一巡と 1 回の実機確認、証明済みの修正の PR は最大 1 本。 |
+| [`/maintain-verification-skill`](skills/maintain-verification-skill/SKILL.ja.md) | 検証スキルの機能マップがアプリからずれているとき。ソースの一巡と、実際に動かしての確認 1 回、証明済みの修正の PR は最大 1 本。 |
 | [`/create-formal-verification-skill`](skills/create-formal-verification-skill/SKILL.ja.md) | レース、リトライ、状態機械、パーサ、unsafe なコードを壊すケースにテストが届かないとき。1 つの性質を適した道具で検証し、変更のたびに再確認するプロジェクト固有のスキルを生成する。 |
 | [`/maintain-formal-verification-skill`](skills/maintain-formal-verification-skill/SKILL.ja.md) | 形式検証が対象にしているコードが前回の確認から変わったとき。モデル、ハーネス、性質をコードに合わせて更新し、再実行し、各失敗が検証側のずれかコードのバグかを言う。 |
 | [`/statechart`](skills/statechart/SKILL.ja.md) | 振る舞いの持ち主に仕様を読ませるのではなく見せたいとき。TLA+ モデルを確認し、ユーザーに見えるものを mermaid のステートチャートとして描き、ルールを破る状態に印を付け、それぞれへの最短経路を示す。 |
